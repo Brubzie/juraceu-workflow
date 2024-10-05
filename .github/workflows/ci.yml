@@ -38,7 +38,7 @@ jobs:
           pyinstaller --onefile app.py
 
       - name: Archive Executable
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: imc_executable_linux
           path: dist/app  # O executável gerado no Linux (sem extensão)
